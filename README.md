@@ -1,6 +1,6 @@
 # Competitive Coding
 
-Welcome to my Competitive Coding repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Programming.
+Welcome to my Competitive Coding repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Coding.
 
 ## Key Features
 
