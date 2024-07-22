@@ -7,7 +7,6 @@ Welcome to my Competitive Coding repository! This collection features a variety 
 - **Efficient Data Structures**: Implementations of commonly used data structures such as DSU, Segment Tree, Lazy Propagation, and more.
 - **Algorithmic Solutions**: A collection of various algorithms, including Graph and Tree Algorithms, Hashing and Matching Algorithms.
 - **Mathematical Utilities**: Classes and Functions for Combinatorics and Number Theory often required in Competitive Programming.
-- **Optimized Code**: Code optimized for performance and readability, with clear comments to help understand and utilize it effectively.
 
 ## Usage
 
