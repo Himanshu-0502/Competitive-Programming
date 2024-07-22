@@ -1,22 +1,22 @@
-# Competitive Coding Template
+# Competitive Coding
 
-Welcome to my Competitive Coding repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Coding.
+Welcome to my Competitive Coding repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Programming.
 
 ## Key Features
 
 - **Efficient Data Structures**: Implementations of commonly used data structures such as DSU, Segment Tree, Lazy Propagation, and more.
 - **Algorithmic Solutions**: A collection of various algorithms, including Graph and Tree Algorithms, Hashing and Matching Algorithms.
 - **Mathematical Utilities**: Classes and Functions for Combinatorics and Number Theory often required in Competitive Programming.
-- **Optimized Code**: Code optimized for performance and readability, with clear comments to help you understand and utilize it effectively.
+- **Optimized Code**: Code optimized for performance and readability, with clear comments to help understand and utilize it effectively.
 
 ## Usage
 
-1. **Clone the repository**:
+1. Clone the repository:
    ```sh
    git clone https://github.com/Himanshu-0502/Competitive-Coding.git
    ```
 
-2. **Navigate to the directory**:
+2. Navigate to the directory:
    ```sh
    cd Competitive-Coding
    ```
