@@ -23,7 +23,7 @@ void Print(Testcase T){
     
 }
 void Output(int ans){
-    
+
 }
 int main(){
     ios_base::sync_with_stdio(false);
@@ -33,17 +33,21 @@ int main(){
     cin>>tc;
     for(int i=1;i<=tc;i++){
         Testcase T=Generate();
-        if(Participant(T)==Judge(T)){
-            cout<<"Passed Testcase "<<i<<"\n";
-            continue;
+        int P=Participant(T);
+        int J=Judge(T);
+        if(P==J){
+            cout<<"Passed Testcase: "<<i<<"\n";
         }
-        cout<<"Failed Testcase "<<i<<"\n";
-        Print(T);
-        cout<<"Expected ";
-        Output(Judge(T));
-        cout<<"Found ";
-        Output(Participant(T));
-        return 0;
+        else{
+            cout<<"Failed Testcase: "<<i<<"\n";
+            cout<<"Input: ";
+            Print(T);
+            cout<<"Expected: ";
+            Output(J);
+            cout<<"Found: ";
+            Output(P);
+            return 0;
+        }
     }
     cout<<"Successfully Passed All Testcases";
     return 0;
