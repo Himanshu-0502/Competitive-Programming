@@ -14,7 +14,7 @@ class Combinatorics{
             ifact[i]=(ifact[i-1]*inv[i])%mod;
         }
     }
-    int exp(long long a,long long b,int mod){
+    long long exp(long long a,long long b,int mod){
         long long ans=1;
         while(b){
             if(b&1) ans=((__int128_t)ans*a)%mod;
@@ -23,17 +23,17 @@ class Combinatorics{
         }
         return ans;
     }
-    int inverse(int n,int mod){
+    long long inverse(int n,int mod){
         return exp(n,mod-2,mod);
     }
-    int nCr(int n,int r,int mod){
+    long long nCr(int n,int r,int mod){
         if(r>n||r<0) return 0;
         long long ans=dfact[n];
         ans=(ans*ifact[r])%mod;
         ans=(ans*ifact[n-r])%mod;
         return ans;
     }
-    int nPr(int n,int r,int mod){
+    long long nPr(int n,int r,int mod){
         if(r>n||r<0) return 0;
         long long ans=dfact[n];
         ans=(ans*ifact[n-r])%mod;
