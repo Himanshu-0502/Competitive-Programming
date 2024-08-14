@@ -14,27 +14,21 @@ int main(){
         graph[v].push_back(u);
     }
     vector<int> side(n,-1);
-    bool is_bipartite=true;
-    function<void(int)> bfs=[&](int src){
-        queue<int> q;
-        q.push(src);
-        side[src]=0;
-        while(q.size()){
-            int v=q.front();
-            q.pop();
-            for(auto u:graph[v]){
-                if(side[u]==-1){
-                    side[u]=side[v]^1;
-                    q.push(u);
-                }
-                else{
-                    is_bipartite&=(side[u]!=side[v]);
-                }
+    function<bool(int,int)> dfs=[&](int v,int c){
+        side[v]=c;
+        for(auto u:graph[v]){
+            if(side[u]==-1){
+                if(dfs(u,!c)==false) return false;
             }
-        }           
+            else{
+                if(side[u]==c) return false;
+            }
+        }
+        return true;
     };
+    bool is_bipartite=true;
     for(int i=0;i<n;i++){
-        if(side[i]==-1) bfs(i);
+        if(side[i]==-1) is_bipartite&=dfs(i,0);
     }
     if(is_bipartite){
         cout<<"Yes\n";
