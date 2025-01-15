@@ -12,14 +12,8 @@ int index(ordered_set<int> &s, int val) {
     return s.order_of_key(val);
 }
 
-int value(ordered_set<int> &s, int pos) {
-    return *s.find_by_order(pos);
-}
-
-void erase(ordered_set<int> &s, int val) {
-    int pos = index(s, val);
-    auto it = s.find_by_order(pos);
-    s.erase(it);
+auto iterator(ordered_set<int> &s, int pos) {
+    return s.find_by_order(pos);
 }
 
 int main() {
