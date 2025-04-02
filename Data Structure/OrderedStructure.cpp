@@ -12,14 +12,9 @@ int index(ordered_set<int> &s, int val) {
     return s.order_of_key(val);
 }
 
-auto iterator(ordered_set<int> &s, int pos) {
-    return s.find_by_order(pos);
-}
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    cout.tie(nullptr);
     
     return 0;
 }
