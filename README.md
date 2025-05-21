@@ -1,6 +1,6 @@
-# Competitive Coding
+# Competitive Programming
 
-Welcome to my Competitive Coding repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Coding.
+Welcome to my Competitive Programming repository! This collection features a variety of algorithms and data structures that I have used throughout my competitive programming journey. Written in C++, this template is designed to help you quickly and efficiently tackle a wide range of problems commonly encountered in Competitive Programming.
 
 ## Key Features
 
@@ -12,12 +12,12 @@ Welcome to my Competitive Coding repository! This collection features a variety 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Himanshu-0502/Competitive-Coding.git
+   git clone https://github.com/Himanshu-0502/Competitive-Programming.git
    ```
 
 2. Navigate to the directory:
    ```sh
-   cd Competitive-Coding
+   cd Competitive-Programming
    ```
    
 ## Acknowledgements
