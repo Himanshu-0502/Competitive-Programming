@@ -2,4 +2,4 @@
 *.exe
 
 # Ignore Code.cpp
-*.exe
+Code.cpp
