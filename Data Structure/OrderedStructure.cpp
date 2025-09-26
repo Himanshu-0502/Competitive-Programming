@@ -12,6 +12,10 @@ int index(ordered_set<int> &s, int val) {
     return s.order_of_key(val);
 }
 
+void erase(ordered_set<int> &s, int val) {
+    s.erase(s.find_by_order(index(s, val)));
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
