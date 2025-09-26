@@ -6,8 +6,15 @@ class Node {
     int len;
     int ans;
 
-    Node() : len(1), ans(0) {};
-    Node(int val) : len(1), ans(val) {};
+    Node() {
+        len = 0;
+        ans = 0;
+    }
+
+    Node(int val) {
+        len = 1;
+        ans = val;
+    }
 };
 
 Node combine(Node &a, Node &b) {
@@ -30,12 +37,10 @@ Node query(vector<Node> &tree, int n, int l, int r) {
     Node ansl, ansr;
     for (l += n, r += n; l < r; l >>= 1, r >>= 1) {
         if (l & 1) {
-            ansl = combine(ansl, tree[l]);
-            l += 1;
+            ansl = combine(ansl, tree[l++]);
         }
         if (r & 1) {
-            r -= 1;
-            ansr = combine(tree[r], ansr);
+            ansr = combine(tree[--r], ansr);
         }
     }
     return combine(ansl, ansr);
@@ -60,11 +65,9 @@ void update(vector<Node> &tree, int n, int l, int r, int v) {
     Node temp = Node(v);
     for (l += n, r += n; l < r; l >>= 1, r >>= 1) {
         if (l & 1) {
-            tree[l] = combine(tree[l], temp);
-            l += 1;
+            tree[l] = combine(tree[l++], temp);
         } else {
-            r -= 1;
-            tree[r] = combine(tree[r], temp);
+            tree[r] = combine(temp, tree[--r]);
         }
     }
 }
