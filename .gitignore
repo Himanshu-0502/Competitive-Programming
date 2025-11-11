@@ -3,3 +3,6 @@
 
 # Ignore Code.cpp
 Code.cpp
+
+# Ignore .vscode
+.vscode
