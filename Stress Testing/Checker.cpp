@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int Number(int a, int b) {
+int number(int a, int b) {
     mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
     return (a + rng() % (b - a + 1));
 }
